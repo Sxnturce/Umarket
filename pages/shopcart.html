@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!--Tittle -->
+    <title>U-market</title>
+    <!--Link-Icon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://static-00.iconduck.com/assets.00/checkout-icon-512x497-9zy9ouz4.png">
+    <!--Link-CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Link-Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--Link-sweetalert-2 -->
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container-nav">
+            <img src="/img/logoUmarket.png" alt="logoUmarket">
+            <div class="container-items">
+                <div class="container-items-main">
+                    <li class="container-links">
+                        <a href="#" class="rounded-link"><span>Comprar</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#"><span>Vender</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-links">
+                        <a href="#" class="acces-large">Sede
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#"><span>Norte</span></a></li>
+                            <li><a href="#"><span>Sur</span></a></li>
+                            <li><a href="#"><span>Este</span></a></li>
+                            <li><a href="#"><span>Oeste</span></a></li>
+                        </ul>
+                    </li>
+                    <a href="#"><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+            <ul class="dropdown__mobile" id="menu">
+                <img src="../img/logoUmarket.png" alt="">
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <span class="dropdown__span">Modo</span>
+                        <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Comprar</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Vender</li>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <span class="dropdown__span">Sedes</span>
+                        <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Norte</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Sur</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Este</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Oeste</li>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <hr>
+                <a href="#">Ir a carrito<i class='bx bx-cart'></i></a>
+            </ul>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle" id="menu_burguer">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        </nav>
+
+        <body>
+    </header>
+    <main class="container-main">
+        <section class="menu-lateral">
+            <div class="container__arrow" id="arrow"><i class='bx bx-chevrons-left'></i></div>
+            <div class="menu-lateral-center">
+                <figure class="menu-img">
+                    <img src="../img/Imagen_usuario.png" alt="">
+                    <a href="#" class="icon-mobile"><i class="fa-solid fa-gear"></i></a>
+                    <a href="" class="edit-profile">Editar Perfil</a>
+                </figure>
+                <div class="container-data-perfil">
+                    <h1>Alex Campos</h1>
+                    <p>alexcampos@gmail.com</p>
+                </div>
+                <div class="input-search">
+                    <input type="text" placeholder="Buscar">
+                    <div class="container-icon-search">
+                        <i class='bx bx-search-alt-2'></i>
+                    </div>
+                </div>
+                <div class="container-lateral-li">
+                    <a href="#">
+                        <li>Inicio</li>
+                        <i class='bx bx-home'></i>
+                    </a>
+                    <a href="#">
+                        <li>Bandeja de entrada</li>
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="#">
+                        <li>Categorias</li>
+                        <i class='bx bx-category'></i>
+                    </a>
+                    <a href="#">
+                        <li>Historial</li>
+                        <i class='bx bx-history'></i>
+                    </a>
+                </div>
+                <a class="footer-lateral" href="#">
+                    <hr>
+                    <h3><span>Cerrar sesión</span><i class='bx bx-exit'></i></h3>
+                    <i class='bx bx-exit'></i>
+                </a>
+            </div>
+        </section>
+        <section class="container-mobile">
+            <div class="nav-mobile">
+                <i class='bx bxs-widget widget'></i>
+                <div class="nav-mobile-input">
+                    <input type="text" id="search" placeholder="Busqueda">
+                </div>
+                <a href="#"><i class='bx bx-exit'></i></a>
+            </div>
+            <div class="down__mobile">
+                <a href="#">Inicio <i class='bx bxs-home-alt-2'></i></a>
+                <a href="#">Mensajes <i class='bx bxs-chat'></i></a>
+                <a href="#">Categorias <i class='bx bxs-category-alt'></i></a>
+                <a href="#">Historial <i class="fa-solid fa-clock-rotate-left"></i></a>
+            </div>
+        </section>
+        <section class="container-sh" id="container_pay">
+            <div class="container-sh-products">
+                <div class="text-sh">
+                    <a class="radius-sh" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    <div class="text-sh-container">
+                        <h1>Carrito de Compras</h1>
+                        <p>Tienes 4 Productos en tu Carrito de Compra</p>
+                    </div>
+                </div>
+                <div class="container-products-card">
+                    <figure class="container-img-card">
+                        <img src="../img/img-burger.png" alt="burger-card">
+                    </figure>
+                    <div class="container-description-card">
+                        <h3>Producto</h3>
+                        <p>Descripción del Producto</p>
+                    </div>
+                    <div class="container-icons-card">
+                        <i class="fa-solid fa-minus"></i>
+                        <h4>1</h4>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3 class="cantidad">S/.25.00</h3>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="container-products-card">
+                    <figure class="container-img-card">
+                        <img src="../img/img-hat.png" alt="burger-card">
+                    </figure>
+                    <div class="container-description-card">
+                        <h3>Producto</h3>
+                        <p>Descripción del Producto</p>
+                    </div>
+                    <div class="container-icons-card">
+                        <i class="fa-solid fa-minus"></i>
+                        <h4>1</h4>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3 class="cantidad">S/.18.00</h3>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="container-products-card">
+                    <figure class="container-img-card">
+                        <img src="../img/img-teddy.png" alt="burger-card">
+                    </figure>
+                    <div class="container-description-card">
+                        <h3>Producto</h3>
+                        <p>Descripción del Producto</p>
+                    </div>
+                    <div class="container-icons-card">
+                        <i class="fa-solid fa-minus"></i>
+                        <h4>1</h4>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3 class="cantidad">S/.35.00</h3>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="container-products-card">
+                    <figure class="container-img-card">
+                        <img src="../img/img-air.png" alt="burger-card">
+                    </figure>
+                    <div class="container-description-card">
+                        <h3>Producto</h3>
+                        <p>Descripción del Producto</p>
+                    </div>
+                    <div class="container-icons-card">
+                        <i class="fa-solid fa-minus"></i>
+                        <h4>1</h4>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3 class="cantidad">S/.70.00</h3>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="container-products-card">
+                    <figure class="container-img-card">
+                        <img src="../img/img-air.png" alt="burger-card">
+                    </figure>
+                    <div class="container-description-card">
+                        <h3>Producto</h3>
+                        <p>Descripción del Producto</p>
+                    </div>
+                    <div class="container-icons-card">
+                        <i class="fa-solid fa-minus"></i>
+                        <h4>1</h4>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3 class="cantidad">S/.70.00</h3>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="container-paymethod">
+                <h1>Detalle de Tarjetas</h1>
+                <div class="container-cards-form">
+                    <h1>Tipo de tarjeta</h1>
+                    <div class="container-main-cards">
+                        <div class="container-card-pay">
+                            <img src="../img/img-visa.png" alt="">
+                        </div>
+                        <div class="container-card-pay">
+                            <img src="../img/img-masterCard.png" alt="">
+                        </div>
+                        <div class="container-card-pay">
+                            <img src="../img/img-payPal.png" alt="">
+                        </div>
+                        <div class="container-card-pay">
+                            <img src="../img/img-payPal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="input-name input-container">
+                        <label for="">Nombre</label>
+                        <input type="text" name="" id="" placeholder="Nombre" class="form-control">
+                    </div>
+                    <div class="input-numb input-container">
+                        <label for="">Numero de Tarjeta</label>
+                        <input type="text" placeholder="1111 2222 3333 4444" class="form-control">
+                    </div>
+                    <div class="container-target">
+                        <div class="num-tg">
+                            <label for="">Fecha de Tarjeta</label>
+                            <input type="text" id="fecha" name="fecha" placeholder="MM/AA" class="form-control">
+                        </div>
+                        <div class="num-tg">
+                            <label for="">CVV</label>
+                            <input type="text" placeholder="123" class="form-control">
+                        </div>
+                    </div>
+                </form>
+                <div class="container-pay-text">
+                    <div class="igv">
+                        <h3>Subtotal</h3>
+                        <h3>IGV(%18)</h3>
+                        <h3>Total</h3>
+                    </div>
+                    <div class="pay-price">
+                        <h3>S/.00.00</h3>
+                        <h3>S/.00.00</h3>
+                        <h3>S/.00.00</h3>
+                    </div>
+                </div>
+                <a href="#" id="btn-send">
+                    <p>S/.00.00</p>
+                    <span>Pagar <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="../js/app.js"></script>
+    <!--script-SweetAlert-2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <!--Font-Awesome -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

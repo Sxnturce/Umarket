@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!--Tittle -->
+    <title>U-Market</title>
+    <!--Link-Icon -->
+    <link rel="icon" type="image/x-icon" href="/img/logoBlack.png">
+    <!--Link-CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Link-Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--Link-sweetalert-2 -->
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container-nav">
+            <img src="/img/logoUmarket.png" alt="logoUmarket">
+            <div class="container-items">
+                <div class="container-items-main">
+                    <li class="container-links">
+                        <a href="#" class="rounded-link"><span>Comprar</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#"><span>Vender</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-links">
+                        <a href="#" class="acces-large">Sede
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#"><span>Norte</span></a></li>
+                            <li><a href="#"><span>Sur</span></a></li>
+                            <li><a href="#"><span>Este</span></a></li>
+                            <li><a href="#"><span>Oeste</span></a></li>
+                        </ul>
+                    </li>
+                    <a href="#"><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+            <ul class="dropdown__mobile" id="menu">
+                <img src="../img/logoUmarket.png" alt="">
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <span class="dropdown__span">Modo</span>
+                        <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Comprar</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Vender</li>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <span class="dropdown__span">Sedes</span>
+                        <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Norte</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Sur</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Este</li>
+                            </a>
+                            <a class="dropdown__a" href="#">
+                                <li class="dropdown__li">Oeste</li>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <hr>
+                <a href="#">Ir a carrito<i class='bx bx-cart'></i></a>
+            </ul>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle" id="menu_burguer">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        </nav>
+
+        <body>
+    </header>
+    <main class="container-main">
+        <section class="menu-lateral">
+            <div class="container__arrow" id="arrow"><i class='bx bx-chevrons-left'></i></div>
+            <div class="menu-lateral-center">
+                <figure class="menu-img">
+                    <img src="../img/Imagen_usuario.png" alt="">
+                    <a href="#" class="icon-mobile"><i class="fa-solid fa-gear"></i></a>
+                    <a href="" class="edit-profile">Editar Perfil</a>
+                </figure>
+                <div class="container-data-perfil">
+                    <h1>Alex Campos</h1>
+                    <p>alexcampos@gmail.com</p>
+                </div>
+                <div class="input-search">
+                    <input type="text" placeholder="Buscar">
+                    <div class="container-icon-search">
+                        <i class='bx bx-search-alt-2'></i>
+                    </div>
+                </div>
+                <div class="container-lateral-li">
+                    <a href="#" class="active_anchor">
+                        <li>Inicio</li>
+                        <i class='bx bx-home'></i>
+                    </a>
+                    <a href="#">
+                        <li>Bandeja de entrada</li>
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="#">
+                        <li>Categorias</li>
+                        <i class='bx bx-category'></i>
+                    </a>
+                    <a href="#">
+                        <li>Historial</li>
+                        <i class='bx bx-history'></i>
+                    </a>
+                </div>
+                <a class="footer-lateral" href="#">
+                    <hr>
+                    <h3><span>Cerrar sesión</span><i class='bx bx-exit'></i></h3>
+                    <i class='bx bx-exit'></i>
+                </a>
+            </div>
+        </section>
+        <section class="container-mobile">
+            <div class="nav-mobile">
+                <i class='bx bxs-widget widget'></i>
+                <div class="nav-mobile-input">
+                    <input type="text" id="search" placeholder="Busqueda">
+                </div>
+                <a href="#"><i class='bx bx-exit'></i></a>
+            </div>
+            <div class="down__mobile">
+                <a href="#">Inicio <i class='bx bxs-home-alt-2'></i></a>
+                <a href="#">Mensajes <i class='bx bxs-chat'></i></a>
+                <a href="#">Categorias <i class='bx bxs-category-alt'></i></a>
+                <a href="#">Historial <i class="fa-solid fa-clock-rotate-left"></i></a>
+            </div>
+        </section>
+        <section class="example">
+            <!--             <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1701213008329-e3e649359a19?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""> -->
+            <h1>Hola mundo</h1>
+        </section>
+    </main>
+    <script src="../js/app.js"></script>
+    <!--script-SweetAlert-2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <!--Font-Awesome -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
