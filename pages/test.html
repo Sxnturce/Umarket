@@ -6,16 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <a class="btn">Activar</a>
-    <div class="dropdown" id="myDropdown">
-        <a href="#" class="item">Opción 1</a>
-        <a href="#" class="item">Opción 2</a>
-        <a href="#" class="item">Opción 3</a>
-    </div>
+    <div class="swiper swiper-cards">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="../img/banner-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/banner-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/banner-3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/banner-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/banner-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/banner-3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/banner-2.jpg" alt="">
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/test.js"></script>
 </body>
 

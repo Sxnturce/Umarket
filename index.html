@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="../css/styles.css">
     <!--Link-Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <!--Link-sweetalert-2 -->
+    <!--swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header class="header">
         <nav class="container-nav">
-            <img src="/img/logoUmarket.png" alt="logoUmarket">
+            <a href="./index.html"><img src="/img/logoUmarket.png" alt="logoUmarket"></a>
             <div class="container-items">
                 <div class="container-items-main">
                     <li class="container-links">
@@ -38,7 +39,7 @@
                             <li><a href="#"><span>Oeste</span></a></li>
                         </ul>
                     </li>
-                    <a href="#"><i class='bx bx-cart'></i></a>
+                    <a href="../pages/shopcart.html"><i class='bx bx-cart'></i></a>
                 </div>
             </div>
             <ul class="dropdown__mobile" id="menu">
@@ -86,7 +87,7 @@
                     </div>
                 </li>
                 <hr>
-                <a href="#">Ir a carrito<i class='bx bx-cart'></i></a>
+                <a href="./pages/shopcart.html">Ir a carrito<i class='bx bx-cart'></i></a>
             </ul>
             <input type="checkbox" id="checkbox">
             <label for="checkbox" class="toggle" id="menu_burguer">
@@ -96,7 +97,6 @@
             </label>
         </nav>
 
-        <body>
     </header>
     <main class="container-main">
         <section class="menu-lateral">
@@ -157,19 +157,542 @@
                 <a href="#">Historial <i class="fa-solid fa-clock-rotate-left"></i></a>
             </div>
         </section>
-        <section class="example">
-            <!--             <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <img src="https://images.unsplash.com/photo-1701213008329-e3e649359a19?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <img src="https://images.unsplash.com/photo-1682685797332-e678a04f8a64?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""> -->
-            <h1>Hola mundo</h1>
+        <section class="content-index">
+            <div class="swiper swiper-hero">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/banner-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner-2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner-3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner-2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="carrousel container shoes">
+                <h2>Más vendidos de la semana en Zapatillas
+                    <span>Ir a mas vendidos</span>
+                </h2>
+                <div class="swiper swiper-cards">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-1-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-1.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-2-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-2.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-3-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-3.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-4-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-4.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-6-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-6.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper swiper-cards">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-1-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-1.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-2-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-2.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-3-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-3.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-4-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-4.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/high-6-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/high-6.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="carrousel container clothes">
+                <h2>Más vendidos de la semana en Ropa
+                    <span>Ir a mas vendidos</span>
+                </h2>
+                <div class="swiper swiper-cards">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-1-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-1.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-2-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-2.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-3-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-3.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-4-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-4.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-6-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-6.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper swiper-cards">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-1-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-1.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-2-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-2.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-3-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-3.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-4-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-4.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-5-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-5.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card__slide">
+                                <picture>
+                                    <source srcset='./img/Jordan-6-webp.webp' type='image/webp'>
+                                    <img loading='lazy' src='./img/Jordan-6.png' alt=''>
+                                </picture>
+                                <div class="card__slide--text">
+                                    <h3>Jordan 1 Air Retro</h3>
+                                    <p class="price">$500.000 <span>-35% OFF</span></p>
+                                </div>
+                                <div class="slide__btn">
+                                    <a href="#">Comprar</a>
+                                    <p class="send">Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </section>
     </main>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/app.js"></script>
+    <script src="./js/slider.js"></script>
     <!--script-SweetAlert-2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <!--Font-Awesome -->

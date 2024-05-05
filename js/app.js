@@ -34,7 +34,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const arrow = document.getElementById("arrow");
     const menu_lateral = document.querySelector(".menu-lateral")
 
-
     arrow.addEventListener("click", toggleMenu);
 
     function toggleMenu() {
@@ -42,9 +41,11 @@ window.addEventListener("DOMContentLoaded", () => {
         if (menu_lateral.classList.contains("active_lateral")) {
             container_main.classList.add("grid_switch")
             menu_lateral.style.position = "fixed"
+            arrow.style.transform = "rotate(180deg)"
         } else {
             container_main.classList.remove("grid_switch")
             menu_lateral.style.position = ""
+            arrow.style.transform = ""
         }
     }
 
