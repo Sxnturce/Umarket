@@ -43,7 +43,7 @@ body {
 	z-index: 10;
 	.container-nav {
 		width: 94%;
-		max-width: 1200px;
+		max-width: 1400px;
 		margin: 0 auto;
 		/* 			max-width: 1600px; */
 		display: flex;
@@ -451,6 +451,7 @@ body {
 				img {
 					width: 100%;
 					height: 100%;
+					mask-image: linear-gradient(#272643 60%, transparent);
 					object-fit: cover;
 				}
 			}
@@ -486,6 +487,54 @@ body {
 				box-shadow: inset 0 0 0 1px #fff;
 			}
 		}
+		.cards__help {
+			--repeat-grid: 5;
+			display: grid;
+			grid-template-columns: repeat(var(--repeat-grid), 1fr);
+			gap: 1em;
+			.card {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 1.5em;
+				background-color: #fff;
+				border-radius: 10px;
+				padding: 1em 0.8em;
+				cursor: pointer;
+				h3 {
+					font-weight: 500;
+				}
+				&:hover {
+					p {
+						color: rgb(80, 123, 204);
+					}
+					& > a {
+						background-color: rgb(180, 205, 238);
+					}
+				}
+				p {
+					text-align: center;
+					height: 50px;
+				}
+				img {
+					width: 100%;
+					object-fit: contain;
+					height: 150px;
+				}
+				a {
+					text-decoration: none;
+					font-size: 0.9em;
+					text-align: center;
+					width: 90%;
+					background-color: rgb(206, 227, 255);
+					color: rgb(44, 92, 182);
+					font-weight: 500;
+					padding: 0.2em 0;
+					transition: all 0.2s ease;
+				}
+			}
+		}
 		.carrousel {
 			background-color: #fff;
 			padding: 1em 1.2em;
@@ -504,7 +553,7 @@ body {
 			}
 			.swiper-cards {
 				width: 100%;
-				height: 300px;
+				height: 350px;
 				max-width: 1600px;
 				overflow: hidden !important;
 				display: flex;
@@ -529,11 +578,16 @@ body {
 						border-radius: 10px;
 						height: 100%;
 						gap: 1.1em;
+						overflow: hidden;
 						img {
 							width: 100%;
-							height: 150px;
+							height: 180px;
 							object-fit: contain;
-							max-width: 150px;
+							max-width: 180px;
+							transition: all 0.3s ease-in-out;
+							&:hover {
+								transform: scale(1.15) rotate(-25deg);
+							}
 						}
 						.card__slide--text {
 							display: flex;
@@ -610,7 +664,146 @@ body {
 				}
 			}
 		}
+		.offerts {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			gap: 1em;
+			.offerts__today {
+				background-color: #fff;
+				border-radius: 10px;
+				padding: 1em;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.card {
+					display: flex;
+					flex-direction: column;
+					gap: 0.5em;
+					padding: 0.5em;
+					min-width: 260px;
+					img {
+						width: 100%;
+						max-width: 260px;
+					}
+					.price-old {
+						color: gray;
+						text-decoration: line-through;
+					}
+					.price__container {
+						display: flex;
+						width: 100%;
+						align-items: center;
+						gap: 0.5em;
+						.price {
+							font-size: 1.55em;
+							font-weight: 500;
+						}
+						span {
+							font-size: 1rem;
+							font-weight: normal;
+							color: #078a0e;
+						}
+					}
+					.envio {
+						color: #078a0e;
+					}
+				}
+			}
+			.offerts__swiper {
+				background-color: #fff;
+				border-radius: 10px;
+				padding: 1em;
+				height: 100%;
+				overflow: hidden !important;
+				&:hover {
+					.swiper-button-prev,
+					.swiper-button-next {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				.swiper-offerts {
+					height: 100%;
+					overflow: hidden !important;
+					.swiper-slide {
+						width: 100% !important;
+						flex: 1 0 min(290px, 100%);
+						.card {
+							display: flex;
+							flex-direction: column;
+							gap: 0.5em;
+							padding: 0.5em;
+							h3 {
+								visibility: hidden;
+								opacity: 0;
+							}
+							img {
+								width: 100%;
+								height: 240px;
+								object-fit: contain;
+							}
+							.price-old {
+								color: gray;
+								text-decoration: line-through;
+							}
+							.price__container {
+								display: flex;
+								width: 100%;
+								align-items: center;
+								gap: 0.5em;
+								.price {
+									font-size: 1.55em;
+									font-weight: 500;
+								}
+								span {
+									font-size: 1rem;
+									font-weight: normal;
+									color: #078a0e;
+								}
+							}
+							.envio {
+								color: #078a0e;
+							}
+						}
+					}
+				}
+				.swiper-button-prev,
+				.swiper-button-next {
+					--swiper-navigation-size: 20px;
+					--swiper-navigation-color: #0a0a0a;
+					height: 80px;
+					width: 50px;
+					background-color: rgb(255, 255, 255);
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+					margin-top: -40px;
+					opacity: 0;
+					visibility: hidden;
+					transition: all 0.3s ease-in-out;
+				}
+				.swiper-button-prev {
+					border-radius: 0 65px 65px 0;
+					left: -8px;
+				}
+				.swiper-button-next {
+					border-radius: 65px 0 0 65px;
+					right: -8px;
+				}
+				.swiper-pagination {
+					--swiper-pagination-color: white;
+					--swiper-pagination-bullet-size: 8px;
+					--swiper-pagination-bullet-inactive-color: #000;
+					--swiper-pagination-bullet-inactive-opacity: 0.25;
+					--swiper-pagination-bullet-opacity: 1;
+					--swiper-pagination-bullet-horizontal-gap: 4px;
+				}
+			}
+		}
 	}
+}
+
+.grid-template-column {
+	grid-template-columns: 1fr !important;
 }
 
 .container-sh {
@@ -1174,6 +1367,15 @@ body {
 				.swiper-cards {
 					.swiper-slide {
 						flex: 1 0 min(360px, 100%);
+					}
+				}
+			}
+			.offerts {
+				.offerts__swiper {
+					.swiper-offerts {
+						.swiper-slide {
+							flex: 1 0 min(360px, 100%);
+						}
 					}
 				}
 			}

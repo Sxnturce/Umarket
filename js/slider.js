@@ -49,3 +49,16 @@ const swiper2 = new Swiper('.swiper-cards', {
     },
     // If we need pagination
 });
+
+const swiper3 = new Swiper('.swiper-offerts', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    slidesPerGroupAuto: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

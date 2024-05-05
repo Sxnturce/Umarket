@@ -58,9 +58,10 @@ window.addEventListener("DOMContentLoaded", () => {
         down_mobile.classList.toggle("activar__dropdown")
     }
 
+    //Funciones Index
+    funtionIndex(container_main);
 
-
-    //Observer paymethod
+    //Funciones ShopCart
     activeShopCart(container_main);
 })
 
@@ -267,3 +268,53 @@ function activarRezise() {
     observer.observe(container_pay);
 }
 
+
+function funtionIndex(main) {
+    const child = main.lastElementChild;
+    if (child.classList.contains("content-index")) {
+        activeResizeIndex();
+    }
+}
+
+
+
+function activeResizeIndex() {
+    const cards__help = document.querySelector(".cards__help");
+    const offerts = document.querySelector(".offerts");
+
+    const observer = new ResizeObserver(function (entries) {
+        entries.forEach(function (entry) {
+            let ancho = entry.contentRect.width;
+            let repeatGridValue = 1;
+
+            if (ancho > 1100) {
+                setTimeout(() => {
+                    offerts.classList.remove("grid-template-column");
+                }, 100)
+                repeatGridValue = 5;
+            } else if (ancho > 800) {
+                setTimeout(() => {
+                    offerts.classList.remove("grid-template-column");
+                }, 100)
+                repeatGridValue = 3;
+            } else if (ancho > 600) {
+                setTimeout(() => {
+                    offerts.classList.remove("grid-template-column");
+                }, 100)
+                repeatGridValue = 2;
+            } else if (ancho <= 600) {
+                setTimeout(() => {
+                    offerts.classList.add("grid-template-column");
+                }, 100);
+                repeatGridValue = 1;
+            }
+
+            setTimeout(() => {
+                cards__help.style.setProperty("--repeat-grid", repeatGridValue);
+            }, 100);
+        });
+    });
+
+    observer.observe(cards__help);
+    observer.observe(offerts);
+}
