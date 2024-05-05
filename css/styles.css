@@ -1168,7 +1168,16 @@ body {
 }
 
 @media screen and (width <= 480px) {
-	main {
+	.container-main {
+		.content-index {
+			.carrousel {
+				.swiper-cards {
+					.swiper-slide {
+						flex: 1 0 min(360px, 100%);
+					}
+				}
+			}
+		}
 		.container-sh {
 			.container-sh-products {
 				.container-products-card {
