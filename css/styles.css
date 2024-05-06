@@ -43,7 +43,7 @@ body {
 	z-index: 10;
 	.container-nav {
 		width: 94%;
-		max-width: 1400px;
+		max-width: 1200px;
 		margin: 0 auto;
 		/* 			max-width: 1600px; */
 		display: flex;
@@ -426,12 +426,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 4em;
-		/* 		margin-top: 100px; */
 		overflow: auto;
 		max-height: 100vh;
 		.swiper-hero {
-			width: 95%;
-			max-width: 1600px;
+			width: 100%;
+			max-width: 1200px;
 			min-height: 350px;
 			height: 300px;
 			border-radius: 10px;
@@ -567,7 +566,7 @@ body {
 				}
 				.swiper-slide {
 					width: 100% !important;
-					flex: 1 0 min(290px, 100%);
+					flex: 1 0 min(265px, 100%);
 					.card__slide {
 						display: flex;
 						flex-direction: column;
@@ -814,7 +813,7 @@ body {
 	align-content: center;
 	max-height: 100vh;
 	overflow: auto;
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
 	gap: 1em;
 	font-family: var(--font-family);
@@ -1101,7 +1100,7 @@ body {
 .container {
 	width: 95%;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1200px;
 }
 
 .no-scroll {
